@@ -24,6 +24,7 @@ setup_dotfiles() {
 	xargs apt install -y < packages.txt
 
 	echo "Erstelle Symlinks..."
+	ln -sfn /usr/bin/batcat ~/.local/bin/bat
 	ln -sfn ~/dotfiles/bash/.bashrc ~/.bashrc
 	ln -sfn ~/dotfiles/feh/.fehbg ~/.fehbg
 	ln -sfn ~/dotfiles/lightdm/.dmrc ~/.dmrc
